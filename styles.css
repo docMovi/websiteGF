@@ -762,4 +762,97 @@ body {
 #pick:active {
     background-color: #388E3C;
 }
+.hang_content {
+    margin-top: 200px;
+    margin-left: 300px;
+    padding: 60px;
+    max-width: 420px;
+    width: 100%;
+    border-radius: 10px;
+    background: #22333B;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    color: white;
+    display: none; /* Initially hidden until game ends */
+    position: absolute;
+    left: 50%;
+}
+
+.hang_content img {
+    max-width: 130px;
+    margin-bottom: 20px;
+}
+
+.hang_content p b {
+    color: #5E63BA;
+    font-weight: 600;
+}
+
+.hang_content button {
+    padding: 12px 23px; /* Corrected padding value */
+    border-radius: 5px;
+    border: none;
+    background: #5E63BA;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hang_content.show {
+    display: block; /* Show when game ends */
+}
+
+.man h1 {
+    display: none;
+}
+
+.man img {
+    max-width: 200px;
+}
+
+.word-display {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.word-display .letter {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    margin: 0 5px;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.word-display .letter.guessed {
+    border-bottom: none;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.keyboard button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    background: #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.keyboard button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
 
