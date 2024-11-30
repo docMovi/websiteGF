@@ -885,3 +885,28 @@ body {
 }
 
 
+.bal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#balloon {
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out; /* Smooth scaling */
+}
+
+
+#pumpButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#pumpImage {
+    max-width: 100px;
+    transition: transform 0.1s ease-in-out;
+}
+
