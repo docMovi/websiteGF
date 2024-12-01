@@ -99,9 +99,7 @@ a {
 .containerB_G img.hide {
     opacity: 0%; 
 }
-.containerB_G img.hide:hover {
-    opacity: 10%; 
-}
+
 
 .btn {
     display: inline-block;
