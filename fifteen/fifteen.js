@@ -15,46 +15,46 @@ const timeCount = document.querySelector(".timer .timer_sec");
 let questions = [
     {
     numb: 1,
-    question: "Wie war unsere Top-Zeit im Baui?",
-    answer: "3:30 Uhr",
+    question: "Wie heisst mein Verein in Fifa?",
+    answer: "Everton",
     options: [
-      "2:45 Uhr",
-      "4:25 Uhr",
-      "3:30 Uhr",
-      "3:10 Uhr"
+      "Nürnberg",
+      "Kukushafen FC",
+      "Everton",
+      "Arsenal"
     ]
   },
     {
     numb: 2,
-    question: "Wie viele Tage sind wir heute zusammen?",
-    answer: "337 Tage",
+    question: "Wie viele stunden hab ich ungefähr in Fortnite?",
+    answer: "950 Stunden",
     options: [
-      "337 Tage",
-      "346 Tage",
-      "298 Tage",
-      "324 Tage"
+      "220 Stunden",
+      "950 Stunden",
+      "310 Stunden",
+      "330 Stunden"
     ]
   },
     {
     numb: 3,
-    question: "Welchen Burger kauft Tim sich immer bei McDonalds?",
-    answer: "Big King",
+    question: "Welches Wort deines Wortschatzes nervt mich am meisten?",
+    answer: "Spätzle",
     options: [
-      "Long Chicken",
-      "Big King",
-      "Whopper Jr.",
-      "Doppel-Cheeseburger"
+      "Pups",
+      "Ich",
+      "Spätzle",
+      "Digga"
     ]
   },
     {
     numb: 4,
-    question: "Welchen Sport schaut Tim am liebsten?",
-    answer: "Fußball",
+    question: "Unsere erste gemeinsame Serie?",
+    answer: "Witcher",
     options: [
-      "Fußball",
-      "Handball",
-      "keins",
-      "Basketball"
+      "Rick and Morty",
+      "Türkisch für Anfänger",
+      "The Note Book",
+      "Witcher"
     ]
   },
     {
