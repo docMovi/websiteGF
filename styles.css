@@ -914,3 +914,24 @@ body {
     transition: transform 0.1s ease-in-out;
 }
 
+.puzzle {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 2px;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.tile.empty {
+    background-color: #fff;
+    cursor: default;
+}
+
