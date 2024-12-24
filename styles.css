@@ -985,4 +985,73 @@ body {
     color: #333;
 }
 
+.wordle {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.grid div {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+input#guessInput {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button#guessButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#guessButton:hover {
+    background-color: #218838;
+}
+
+.snake {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #eee;
+    border: 2px solid #333;
+    margin: 0 auto;
+}
+
+.snake img {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+}
+
+.scoreContainer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
