@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveYou</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body id="top">
+    <div class="upperContainer">
+        <h1><a href="index.html">ANNA ❤️ TIM</a></h1>
+    </div>
+
+    <div class="midContainerW">
+        <div class="takeCare">
+            <div class="character">
+                <img id="characterImage" src="twentyfour/character.png" alt="Character">
+            </div>
+            <div class="actions">
+                <img id="apple" src="twentyfour/apple.png" alt="Apple" draggable="true">
+                <img id="sponge" src="twentyfour/sponge.png" alt="Sponge" draggable="true">
+                <button id="playButton">PLAY</button>
+            </div>
+            <div class="statusBars">
+                <div class="statusBar">
+                    <span>Hunger</span>
+                    <div class="progress" id="hungerBar"></div>
+                </div>
+                <div class="statusBar">
+                    <span>Cleanliness</span>
+                    <div class="progress" id="cleanlinessBar"></div>
+                </div>
+                <div class="statusBar">
+                    <span>Fun</span>
+                    <div class="progress" id="happinessBar"></div>
+                </div>
+            </div>
+            <div class="flappyGame" style="display: none;">
+                <canvas id="flappyCanvas" width="320" height="480"></canvas>
+                <button id="exitButton">Exit</button>
+                <div id="gameOverScreen" style="display: none;">
+                    <h2>Game Over!</h2>
+                    <p>Score: <span id="finalScore"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="alt"> 
+            <h3><a href="gallerie4.html">ANNA ❤️ ZURÜCK</a></h3>
+        </div>
+    </div>
+
+    <div class="lowerContainer">
+        <div class="fußnote">
+            In Auftrag von Annalena Schmidt
+            ©2024 tim wießmeier
+        </div>
+    </div>
+
+    <script src="twentyfour/twentyfour.js"></script>
+</body>
+</html>
