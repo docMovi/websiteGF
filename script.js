@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let month = d.getMonth();
 
     function testDay(number) {
-        if (month == 11) { // December = 11(months ab 0)
+        /*if (month == 11) { // December = 11(months ab 0)
             if (day >= number) {
                 return true;
             } else {
@@ -12,8 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         } else {
             return false;
-        }
-    }
+        } */
+       return true;
+    } 
 
     const links = [
         { id: 'link1', day: 1, href: '1.html' },
