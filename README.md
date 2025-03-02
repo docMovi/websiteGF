@@ -1,2 +1,2 @@
 # websiteGF
-[View the site here]([https://docmovi.github.io/websit/])
+[View the site here]([https://docmovi.github.io/websiteGF/])
