@@ -219,6 +219,7 @@ figcaption {
           }
         }
 
+
 /* Für kleinere Tablets oder Bildschirme mit max-width: 768px */
 @media (max-width: 768px) {
     .upperContainer, .upperContainerFalse {
@@ -227,16 +228,6 @@ figcaption {
       font-size: 0.9rem;
     }
   
-    .midContainer {
-      padding-bottom: 60px;
-      padding-top: 20px;
-      font-size: 0.9rem;
-    }
-  
-    .containerB, .containerB_G {
-      flex-direction: column; /* Stacked layout */
-      margin: 10px;
-    }
   
     .imgC {
       height: auto;
@@ -269,13 +260,7 @@ figcaption {
       font-size: 0.8rem;
     }
   
-    .midContainer {
-      padding-bottom: 40px;
-      padding-top: 15px;
-      font-size: 0.8rem;
-    }
-  
-    .containerB, .containerB_G {
+    .containerB {
       flex-direction: column;
       margin: 5px;
     }
@@ -290,7 +275,6 @@ figcaption {
       margin-bottom: 5%;
     }
   }
-
  
 
 .otherPicsCont{
