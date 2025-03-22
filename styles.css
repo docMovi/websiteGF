@@ -201,6 +201,71 @@ figcaption {
     padding-bottom: 80px;   
 }
 
+/* Für kleinere Tablets oder Bildschirme mit max-width: 768px */
+@media (max-width: 768px) {
+    .upperContainer, .upperContainerFalse {
+      padding-top: 20px;
+      padding-bottom: 5px;
+      font-size: 0.9rem;
+    }
+  
+    .midContainer {
+      padding-bottom: 60px;
+      padding-top: 20px;
+      font-size: 0.9rem;
+    }
+  
+    .containerB, .containerB_G {
+      flex-direction: column; /* Stacked layout */
+      margin: 10px;
+    }
+  
+    .imgC {
+      height: auto;
+      width: auto; 
+    }
+    .containerB {
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .btn {
+      font-size: 20px;
+      margin-bottom: 5%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Für Smartphones oder Bildschirme mit max-width: 480px */
+  @media (max-width: 480px) {
+    .upperContainer, .upperContainerFalse {
+      padding-top: 10px;
+      padding-bottom: 5px;
+      font-size: 0.8rem;
+    }
+  
+    .midContainer {
+      padding-bottom: 40px;
+      padding-top: 15px;
+      font-size: 0.8rem;
+    }
+  
+    .containerB, .containerB_G {
+      flex-direction: column;
+      margin: 5px;
+    }
+  
+    .imgC {
+        height: auto; 
+        width: auto;
+    }
+  
+    .btn {
+      font-size: 18px;
+      margin-bottom: 5%;
+    }
+  }
+
 .otherPicsCont{
     color: rgb(76, 76, 76);
     font: bolder;
