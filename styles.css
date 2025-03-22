@@ -42,11 +42,15 @@
     align-items: center; /* Vertical alignment */
 }
 .imgC{
-    width: 100vw;
+
     max-width: 100%;
     height: auto;
     display: block;
     overflow: hidden;
+}
+
+.imgC img{
+    height: 100vh;
 }
 
 body{
@@ -201,6 +205,20 @@ figcaption {
     padding-bottom: 80px;   
 }
 
+@media (max-width: 1100px) {
+
+    .imgC img{
+        height: 80vh; 
+      }
+    }
+
+    @media (max-width: 1000px) {
+
+        .imgC img{
+            height: 65vh; 
+          }
+        }
+
 /* Für kleinere Tablets oder Bildschirme mit max-width: 768px */
 @media (max-width: 768px) {
     .upperContainer, .upperContainerFalse {
@@ -224,6 +242,9 @@ figcaption {
       height: auto;
       width: auto; 
     }
+    .imgC img{
+        height: 50vh; 
+      }
     .containerB {
         align-items: center;
         justify-content: center;
@@ -237,7 +258,11 @@ figcaption {
   }
   
   /* Für Smartphones oder Bildschirme mit max-width: 480px */
-  @media (max-width: 480px) {
+  @media (max-width: 520px) {
+
+    .imgC img{
+        height: 30vh; 
+      }
     .upperContainer, .upperContainerFalse {
       padding-top: 10px;
       padding-bottom: 5px;
@@ -265,6 +290,8 @@ figcaption {
       margin-bottom: 5%;
     }
   }
+
+ 
 
 .otherPicsCont{
     color: rgb(76, 76, 76);
