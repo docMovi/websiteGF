@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Für Dich ❤️</title>
+    <link rel="stylesheet" href="videos.css" />
+</head>
+<body>
+
+    <h1>Du Sigma ✨</h1>
+
+    <img src="https://media.theresanaiforthat.com/sigma-face-generator@3246413.png" class="side-image left" alt="Linkes Bild">
+    <img src="https://assets.change.org/photos/8/nt/ns/RjnTnSwkzEYWSBw-800x450-noPad.jpg?1625954835" class="side-image right" alt="Rechtes Bild">
+
+    <div class="video-container">
+        <video controls>
+            <source src="/adventskalender/four/Sigma_short.mp4" type="video/mp4">
+            Dein Browser unterstützt das Videoformat nicht.
+        </video>
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="/adventskalender/four/Sigma_long.mp4" type="video/mp4">
+            Dein Browser unterstützt das Videoformat nicht.
+        </video>
+    </div>
+
+    <a id="back" href="../Momente/moments.html">zurück</a>
+
+    <script>
+        function createSparkle() {
+            const s = document.createElement('div');
+            s.classList.add('sparkle');
+            const icons = ['✨', '💖', '🌸', '💫'];
+            s.innerText = icons[Math.floor(Math.random() * icons.length)];
+            s.style.left = Math.random() * 100 + 'vw';
+            s.style.animationDuration = 5 + Math.random() * 4 + 's';
+            document.body.appendChild(s);
+            setTimeout(() => s.remove(), 9000);
+        }
+
+        setInterval(createSparkle, 700);
+    </script>
+
+</body>
+</html>

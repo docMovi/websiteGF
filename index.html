@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoveYou</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel = "icon" href="icon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna ❤️ Tim</title>
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="styles_homepage.css" />
 </head>
-<body id = "top">
-    
-        <div class="upperContainer">
-            <h1><a href="#top">ANNA ❤️ TIM</a></h1>
-        </div>
-        <div class = imgC> 
-            <img src="us.jpg" alt="SEHR SCHÖNES BILD VON UNS">
-        </div>
+<body id="top">
 
-        <div class="midContainer">
-            <h2>WO WILLST DU HIN?</h2>
-            <div class = "containerB">
-                <a href="gallerie.html" class = "btn">ADVENTSKALENDER</a>
-            </div>
-        </div>  
+    <div class="upperContainer">
+        <h1><a href="#top" style="text-decoration:none; color:white;">ANNA ❤️ TIM</a></h1>
+    </div>
 
-        <div class = "lowerContainer">
-            <div class = fußnote>
-                In Auftrag von Annalena Schmidt
-                ©2024 tim wießmeier
-            </div>
-            
-        </div>
+    <div class="imgC">
+        <img src="us.jpg" alt="SEHR SCHÖNES BILD VON UNS" />
+    </div>
+
+    <div class="midContainer">
+        <h2>WO WILLST DU HIN?</h2>
+        <a href="adventskalender/gallerie.html" class="btn">ADVENTSKALENDER</a>
+        <a href="Momente/moments.html" class="btn">Alle Videos</a>
+    </div>
+
+    <div class="lowerContainer">
+        <div class="fußnote">In Auftrag von Annalena Schmidt<br>©2024 Tim Wießmeier</div>
+    </div>
+
+    <script>
+        // Floating hearts generator
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerText = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = (4 + Math.random() * 4) + 's';
+            document.body.appendChild(heart);
+
+            setTimeout(() => heart.remove(), 7000);
+        }
+
+        setInterval(createHeart, 600);
+    </script>
 
 </body>
 </html>

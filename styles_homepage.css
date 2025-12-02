@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: #fff;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin: 0;
+        }
+
+        /* Floating hearts animation */
+        .heart {
+            position: fixed;
+            bottom: -10px;
+            font-size: 20px;
+            animation: floatUp 6s linear infinite;
+            opacity: 0.8;
+            pointer-events: none;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) translateX(0); opacity: 0.8; }
+            100% { transform: translateY(-120vh) translateX(30px); opacity: 0; }
+        }
+
+        .upperContainer {
+            padding: 30px 0;
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .imgC {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            animation: popIn 1.5s ease;
+        }
+
+        .imgC img {
+            width: 70%;
+            max-width: 400px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+            transition: transform 0.4s;
+        }
+
+        .imgC img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .midContainer {
+            margin-top: 40px;
+            text-align: center;
+            animation: fadeIn 2.5s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    background: rgba(255,255,255,0.35);
+    transform: translateY(-3px);
+}
+
+.lowerContainer {
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    opacity: 0.8;
+}

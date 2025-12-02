@@ -1,37 +1,81 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoveYou.de</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel = "icon" href="icon.png">
+  <meta charset="UTF-8" />
+  <title>Intro Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #fdf5f5;
+      margin: 0;
+    }
+
+    svg {
+      width: 600px;
+      height: 200px;
+    }
+
+    /* Herz-Erscheinung */
+    .heart {
+      transform-origin: center;
+      opacity: 0;
+      transform: scale(0.3) rotate(-20deg);
+      animation: appear 1.5s forwards;
+    }
+
+    @keyframes appear {
+      to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+      }
+    }
+
+    /* Puls-Effekt nach dem Erscheinen */
+    .heart:hover {
+      animation: pulse 1s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to   { transform: scale(1.1); }
+    }
+
+    /* Text, der nach dem Herz eingeblendet wird */
+    .text {
+      opacity: 0;
+      font-family: sans-serif;
+      font-size: 1.5rem;
+      fill: #c33;
+      animation: textAppear 1s forwards;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes textAppear {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
-<body id = "top">
-    <div class="upperContainer">
-        <h1><a href="Index.html">ANNA ❤️ TIM</a></h1>
-    </div>
+<body>
 
-    <div class="midContainer">
-        <div class = "containerB_G">
-            <video width="640" height="360" controls muted  >
-                <source src="video1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <h3><a href="gallerie.html">ANNA ❤️ GALLERIE</a></h1>
-    </div>
+  <svg viewBox="0 0 100 100">
+    <!-- Herz-Pfad -->
+    <path class="heart"
+        d="M50 85
+           C 50 70, 20 40, 20 55
+           A 35 35, 0, 0, 0, 50 90
+           A 35 35, 0, 0, 0, 80 55
+           C 80 40, 50 70, 50 85"
+        fill="#e63946" />
+    <!-- Text, der später eingeblendet wird -->
+    <text class="text" x="50%" y="95%" text-anchor="middle">
+      2 Jahre mit dir
+    </text>
+  </svg>
 
-    <div class = "descContainer">
-        Das Video ist nur für test Zwecke. 
-    </div>
-
-    <div class = "lowerContainer">
-        <div class = fußnote>
-            In Auftrag von Annalena Schmidt
-            ©2024 tim wießmeier
-        </div>
-        
-    </div>
 </body>
 </html>
