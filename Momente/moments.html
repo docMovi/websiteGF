@@ -27,11 +27,39 @@
             <div class="label">Griechenland 🏖️</div>
         </div>
 
-        <div class="card" onclick="location.href='video4.html'">
-            <img src="thumb4.jpg" alt="Video 4" />
-            <div class="label">Video 4 – Erinnerung 💫</div>
+        <div class="card" onclick="location.href='../videopages/oneminute.html'">
+            <img src="../adventskalender/sixteen/thumb.png" alt="Video 4" />
+            <div class="label">1 Minute - Wir 💫</div>
         </div>
     </div>
+
+    <div class="geheim">
+        <div class="mystery-box">
+    
+            <h2>🔒 Ein verborgenes Video liegt hier …</h2>
+            <p class="hint">Nur wer das richtige Passwort kennt, darf das Geschenk öffnen ✨</p>
+    
+            <div class="lock-symbol">🗝️</div>
+    
+            <input type="password" id="secretInput" placeholder="Passwort eingeben …">
+            <button onclick="checkSecret()">Entsperren</button>
+            <button id="game">Passwort Herausfinden</button>
+    
+            <p id="wrong" class="wrong">Falsches Passwort … versuch’s nochmal 💗</p>
+    
+            <div id="secretContent" class="hidden-content">
+                <h3>🎁 Für dich – 2025</h3>
+                <p>Ich liebe dich ❤️</p>
+    
+                <div class="secret-video">
+                    <iframe  src="https://www.youtube.com/embed/hxHEzljFeuA?si=8s4bi7Q8tWxdfzil" 
+                    allowfullscreen ></iframe>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
 
     <a id="back" href="../index.html">zurück</a>
 
@@ -48,6 +76,22 @@
         }
 
         setInterval(createSparkle, 700);
+
+        const SECRET_CODE = "olympia"; // 🔒 Passwort hier!
+
+        function checkSecret() {
+            const input = document.getElementById('secretInput').value.trim().toLowerCase();
+            const wrong = document.getElementById('wrong');
+            const content = document.getElementById('secretContent');
+
+            if (input === SECRET_CODE) {
+                wrong.style.display = "none";
+                content.style.display = "block";
+            } else {
+                wrong.style.display = "block";
+            }
+        }
+
     </script>
 
 </body>

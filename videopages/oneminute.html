@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Für Dich ❤️</title>
+    <link rel="stylesheet" href="videos.css" />
+</head>
+<body>
+
+    <h1>1 Minute Du und Ich ❤️🕐</h1>
+
+    <img src="../adventskalender/twelve/images/hangman-6.jpg" class="side-image left" alt="Linkes Bild">
+
+    <div class="video-container">
+        <video controls src="../adventskalender/sixteen/video17.mov"></video>
+    </div>
+
+    <img  class="side-image right" src="../adventskalender/six/player.jpg" alt="Rechtes Bild">
+
+    <a id="back" href="../Momente/moments.html">zurück</a>
+
+    <script>
+        function createSparkle() {
+            const s = document.createElement('div');
+            s.classList.add('sparkle');
+            const icons = ['⏰', '💖', '🌸', '💫'];
+            s.innerText = icons[Math.floor(Math.random() * icons.length)];
+            s.style.left = Math.random() * 100 + 'vw';
+            s.style.animationDuration = 5 + Math.random() * 4 + 's';
+            document.body.appendChild(s);
+            setTimeout(() => s.remove(), 9000);
+        }
+
+        setInterval(createSparkle, 700);
+    </script>
+
+</body>
+</html>
